@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title> Прогноз погоди, мінімально достатній </title>
+  <link rel="stylesheet" href="table.css" type="text/css" />
+  <link rel="scripts" href="scripts/equation.js" type="javascript"/> 
 </head>
 
 <body>
-<div id="Choose place">
-<h2>Вибір місця розташування</h2>
-<nav>
-  <a href=""> Львів</a> &nbsp&nbsp&nbsp&nbsp    
-  <a href=""> Київ</a> &nbsp&nbsp&nbsp&nbsp
-  <a href=""> Одеса</a> &nbsp&nbsp&nbsp&nbsp
-    <input type="text" id="city_input" placeholder="інакше місто" /> &nbsp&nbsp&nbsp
-      <button id="Find_button">Знайти</button>
+<div id="Choose_place">
+<h2 id=h2>Вибір місця розташування</h2>
+<nav id="nav_bar">
+   <button id="btnLviv" class="nav_btn">Львів</button>     
+  <button id="btnKyiv" class="nav_btn">Киів</button>     
+  <button id="btnOdesa" class="nav_btn">Одеса</button>     
+  <input type="text" id="city_input" placeholder="інакше місто" />
+      <button id="btnGetWeather"  class="nav_btn">Знайти</button>
 </nav>
   </div>   
 <hr>
@@ -29,7 +31,7 @@
 </hr1>
 <hr>
 <div id="wheather data">
-<table border="1">
+<table id = "table1">
   <captions> Параметри погоди</captions>
        
   <tr>
@@ -40,9 +42,9 @@
   </tr>
   <tr>
     <th>Ніч</th>
-      <th></th>
-        <th></th>
-          <th></th>
+      <td>-5C</td>
+        <td>754</td>
+          <td>5  М/С</td>
   </tr>
   <tr>
     <th>Ранок</th>
@@ -67,7 +69,7 @@
 </div>
 <p></p>
 <div id="Satelit images">
-    <table border =1>
+    <table id = "table2">
         <tr>
             <td><img src="http://image.weather.com/looper/archive/europesat_720x486/1L.jpg" alt="Image 1" /></td>
             <td><img src="http://image.weather.com/looper/archive/europesat_720x486/5L.jpg" alt="Image 2" /></td>
@@ -77,7 +79,8 @@
         
 </div>                
 
-
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+           <script type="text/javascript" src="scripts/index.js"></script>  
 </body>
 
 </html>
