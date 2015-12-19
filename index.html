@@ -27,49 +27,24 @@
   &nbsp
   <a href="" id='2-3day'> На 2-3 дні</a> &nbsp
   <a href="" id='week'> На тиждень</a>
+  <span id=test> Тестовий вивід</span>
   </div>
 </hr1>
 <hr>
 <div id="wheather data">
-<table id = "table1">
-  <captions> Параметри погоди</captions>
-       
-  <tr>
-    <th>Час дня</th>
+<table id = "table1" hidden>
+    <tr>
+    <th>Місто</th>
     <th>Температура</th>
     <th> Тиск </th>
-    <th>Вітер</th>
+    <th>Вологість</th>
   </tr>
-  <tr>
-    <th>Ніч</th>
-      <td>-5C</td>
-        <td>754</td>
-          <td>5  М/С</td>
-  </tr>
-  <tr>
-    <th>Ранок</th>
-      <td></td>
-        <td></td>
-        <td></td>  
-          </tr>
-    <tr>
-    <th>Обід</th>
-      <td></td>
-        <td></td>
-          <td></td>
-          </tr>
-     <tr>
-    <th>Вечір</th>
-      <td></td>
-         <td></td>
-         <td></td>   
-    </tr>
 </table> 
 
 </div>
 <p></p>
-<div id="Satelit images">
-    <table id = "table2">
+<div id="satelit_images">
+    <table id = "table2" hidden>
         <tr>
             <td><img src="http://image.weather.com/looper/archive/europesat_720x486/1L.jpg" alt="Image 1" /></td>
             <td><img src="http://image.weather.com/looper/archive/europesat_720x486/5L.jpg" alt="Image 2" /></td>
@@ -80,7 +55,7 @@
 </div>                
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-   <script  type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <script type="text/javascript" src="scripts/moment-with-locales.js"></script>
            <script type="text/javascript" src="scripts/index.js"></script>  
 </body>
 
